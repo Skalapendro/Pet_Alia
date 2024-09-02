@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+Alia Homepage
+{% endblock %}
+
+{% block head %}
+<div class="header">
+   <h1>Alia Platform Site</h1>
+   <p> This is main page of our website. Welcome!</p>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="features">
+   <h2 align="center"> Main page of our website!</h2>
+   <p align="center">Video over IP is a widely used method of delivering video content to an audience over a local or wide area network where media inputs are deconstructed into different streams and then sent over an IP network as individual data packets. Meaning users can watch real-time video and audio content, similar to watching a television broadcast. In the context of media production networks, video over IP can be perceived as a newer alternative to SDI broadcasting which has been a standard for many years.</p>
+   <form action="{% url 'register' %}">
+      <button type="submit" align="center" class="btn btn-default" id="register" > Registration form</button>
+   </form>
+   <form action="{% url 'login' %}">
+      <button type="submit" align="center" class="btn btn-default" id="login"  > LogIn</button>
+   </form>
+</div>
+{% endblock %}

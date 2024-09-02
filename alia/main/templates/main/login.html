@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+{% block title %}
+Login
+{% endblock %}
+
+{% block head %}
+  <style>
+       form {
+          margin-left: 45% ;
+          display: block;
+          padding-top: 1%;
+
+          }
+  </style>
+    <h1 align="center">Log-in</h1>
+    <p align="center">Please, use the following form to log-in:</p>
+    <form action="." method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <p><input align="center" type="submit" value="Log-in"></p>
+    </form>
+{% endblock %}

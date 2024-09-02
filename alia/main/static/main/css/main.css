@@ -1,0 +1,115 @@
+body {
+    background: #F3EFEF;
+}
+
+.header h1, .header p {
+    text-align: center;
+}
+
+
+aside {
+    float: left;
+    background: #FA8546;
+    width: 20%;
+    padding: 3%;
+    height: 100vh;
+    color: #4d4d4d;
+    border-right:5px solid #4d4d4d;
+}
+#register{
+    background: #FA8546;
+    color: #4d4d4d;
+    width: 250px;
+    /* font-weight: bold; */
+    text-align: center;
+    position: relative;
+    margin-left: 30% ;
+    overflow: hidden;
+}
+#register:before {
+	font-family: FontAwesome;
+	content:"\f234";
+	position: absolute;
+	top: 7px;
+	left: -30px;
+	transition: all 600ms ease;
+}
+#register:hover:before {
+	left: 7px;
+	color: #000;
+}
+#register:hover{
+    color: #000;
+    border: 2px solid #000;
+}
+aside img {
+    float: left;
+    border: 3px solid #4d4d4d;
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 9px;
+    right: -7px;
+    border: 3px solid #4d4d4d;
+    border-radius: 20px;
+    padding: 2px 5px 2px 5px;
+}
+
+aside h3 {
+    position: relative;
+    margin-top: 90px;
+    font-size: 28px;
+}
+aside a {
+    text-decoration: none;
+}
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    color: #4d4d4d;
+    display: block;
+    margin-top: 15px;
+    transition: all .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #000000;
+    text-decoration: none;
+    transform: scale(1.10)
+}
+
+ #login {
+    background: #FA8546;
+    color: #4d4d4d;
+    width: 250px;
+    /* font-weight: bold; */
+    text-align: center;
+   /* margin-top: 1em; */
+    position: relative;
+    margin-left: 30% ;
+    overflow: hidden;
+}
+
+#login:hover {
+    color: #000;
+    border: 2px solid #000;
+}
+
+#login:hover:before {
+	left: 7px;
+	color: #000;
+}
+#login:before {
+	font-family: FontAwesome;
+	content:"\f4fc";
+	position: absolute;
+	top: 7px;
+	left: -30px;
+	transition: all 600ms ease;
+}
